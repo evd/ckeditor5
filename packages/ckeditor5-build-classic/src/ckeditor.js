@@ -17,7 +17,6 @@ import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
-import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 import Indent from '@ckeditor/ckeditor5-indent/src/indent';
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
@@ -30,7 +29,10 @@ import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
 import TableCellProperties from '@ckeditor/ckeditor5-table/src/tablecellproperties';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 
-import { FontColor, FontSize } from '@ckeditor/ckeditor5-font';     // <--- ADDED
+// Added
+import { FontColor, FontSize } from '@ckeditor/ckeditor5-font';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -47,7 +49,6 @@ ClassicEditor.builtinPlugins = [
 	ImageStyle,
 	ImageToolbar,
 	ImageUpload,
-	ImageResize,
 	Indent,
 	Link,
 	List,
@@ -60,7 +61,9 @@ ClassicEditor.builtinPlugins = [
 	TableCellProperties,
 	TextTransformation,
 	FontColor,
-	FontSize
+	FontSize,
+	ImageResize,
+	Alignment
 ];
 
 // Editor configuration.
